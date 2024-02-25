@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preggo</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="belly" class="logo"/>
+    </div>
+    <div class="main-container">
+        <h2 class="main-title">Pregnancy Tracker Form</h2>
+        <form action="/submit" method="post" class="form">
+            <div class="form-content">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" ><br><br>
+    
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" ><br><br>
+    
+            <label for="month">Month of Pregnancy:</label><br>
+            <select id="month" name="month" >
+                <option value="">Select Month</option>
+                <option value="1">1st Month</option>
+                <option value="2">2nd Month</option>
+                <option value="3">3rd Month</option>
+                <option value="4">4th Month</option>
+                <option value="5">5th Month</option>
+                <option value="6">6th Month</option>
+                <option value="7">7th Month</option>
+                <option value="8">8th Month</option>
+                <option value="9">9th Month</option>
+            </select><br><br>
+
+            <label for="weight">Weight (kg):</label><br>
+            <input type="number" id="weight" name="weight" step="0.01" ><br><br>
+
+             <label for="height">Height (cm):</label><br>
+             <input type="number" id="height" name="height" ><br><br>
+    
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+        width:140px;
+        height: 65px;
+    }/* Style for form container */
+    .main-title{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #fff;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); Box shadow property */
+    }
+    
+    /* Style for form inputs */
+    label {
+        display: block;
+        /* margin-bottom: 5px; */
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color:  rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Style for submit button */
+    input[type="submit"] {
+        background-color: #f11b6e;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #f11b6e;
+    }
+    
+</style>
+</html>

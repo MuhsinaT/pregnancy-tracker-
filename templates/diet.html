@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diet.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='diet.css') }}">
+
+    
+</head>
+<body>
+    <h1 class="diet-title">Diet plan</h1>
+        <p class="diet-para">Upgrade your health with this refined nutritional plan.</p>
+        
+<div class="side-bar">
+    <img src="{{ url_for('static', filename='lin.png') }}" alt="line" class="side-line"/>
+        <div class="data">
+
+
+
+    {% for x in data %}
+        <p>{{x}}</p>
+    {%endfor%}
+</div>
+</body>
+
+<style>
+    .diet-title{
+        text-align: center;
+    }
+    .diet-para{
+        margin: -10px 450px;
+       }
+
+       .data{
+        margin: 80px auto;
+       }
+
+</style>
+</html>
